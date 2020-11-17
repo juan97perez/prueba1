@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Datos Personales</legend>
+    Introduza su DNI:
+    <input type="number" name="numero" placeholder="Introduzca los números">
+    <input type="text" name="texto" maxlength="1" placeholder="Introduzca la letra">
+    <p>Apellidos:</p>
+    <p> <input type="text" maxlength="30" name="apellidos" size="40" placeholder="Escriba su apellido"></p>
+    <p>Nombre:</p>
+    <p><input type="text" maxlength="15" name="nombre" size="40" placeholder="Introduzca su nombre"></p>
+    <p>Año de nacimiento: </p>
+    <p><input type="number" name="nacido" min="1900" placeholder="Introduzca el año de nacimiento"></p>
+    <p>Nacionalidad:</p>
+    <select name="menu">
+    <option>Española</option>
+    <option>Portuguesa</option>
+    <option>Francesa</option>
+</select>
+    <p>Correo Electrónico</p>
+    <p>Usuario: <input type="text" name="usuario" maxlength="6" placeholder="Introduzca su correo electrónico"></p>
+    <p>Contraseña: <input type="password" name="password" minlength="6" placeholder="Introduzca su contraseña" maxlength="10"></p>
+    <p>Sexo:</p>
+     <p>
+        <input type="radio" name="hm" value="h" required> Hombre
+        <input type="radio" name="hm" value="m"> Mujer
+    </p>
+    <p><textArea name="texto" rows="4" cols="40" placeholder="Otros comentarios"></textArea></p>
+        </fieldset>
+
+
+    <p>Confirmo el deseo de recibir más información a través del correo electrónico.</p>
+    <input type="checkbox" name="casilla" checked>Casilla 1
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </p>
+</form>
+</body>
+</html>
